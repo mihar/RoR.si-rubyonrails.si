@@ -1,0 +1,137 @@
+#head
+  %h1
+    Ruby on Rails, spletni razvoj brez bolečin
+  %p
+    Ruby on Rails je odprto-kodna spletna platforma, katere cilj je srečen, produktiven programer. Z upoštevanjem konvencij lahko napišeš prelepo kodo, z manj tratenja časa ob konfiguraciji.
+.hype
+  %ul
+    %li.hy_visual
+      %a{ :href => "/vizualije/" }
+        %strong
+          Navduši se
+        z vizualijami enostavnih rešitev in predstavitvami o prednostih Rails.
+    %li.hy_download
+      %a{ :href => "/potrebscine/" }
+        %strong
+          Poigraj se
+        s prenosom verzije 2.3.5, ki je v javnost bila izdana 30. novembra 2009.
+    %li.hy_documentation
+      %a{ :href => "http://guides.rubyonrails.org" }
+        %strong
+          Izboljšaj se
+        z branjem vodičev, knjig, vzorcev, priročnikov in uradne dokumentacije.
+    %li.hy_community
+      %a{ :href => "http://rails.si" }
+        %strong
+          Poveži se
+        s slovenskimi Ruby in Rails razvijalci na Rails.si in izmenjaj izkušnje
+
+.copy
+  %h2
+    Kaj vse je v paketu?
+  %p
+    Rails je obsežna platforma za razvoj Model-View-Controller aplikacij, ki
+    %strong.marker
+      temeljijo na podatkovnih bazah
+    \. Od
+    %abbr{ :title => "Asinhroni JavaScript in XML" }
+      AJAX
+    a v Viewu, preko odgovorov na poizvedbe v Controllerju, do objektno-relacijskega povezovanja z bazo v Modelu, Rails nudi poenoten razvoj v Rubyu. Od zagona aplikacij te loči le še postavitev podatkovne baze in spletnega strežnika.
+.copy
+  %h2
+    Kdo uporablja Rails?
+  %p
+    Od začetnikov, neprofitnih organizacij, do koroporacij.. Vsi uporabljajo Rails. Zaradi osredotočenosti na infrastrukturo, je primerna platforma za razvoj praktično vseh tipov spletnih aplikacij. Te lahko poganjajo
+    %strong.marker
+      kolaborativne strani, ki temeljijo na skupnostih, spletne trgovine, urejevalnike vsebin, statistik
+    , in pravzaprav karkoli drugega si lahko izmisliš.. Naprimer:
+.copy.sub
+  %h3
+    Slovenske aplikacije
+  %dl
+    %dt
+      OdpiralniČasi
+    %dd.thumb
+      %a{ :href => "http://odpiralnicasi.com", :title => "OdpiralniČasi" }
+        %img{ :src => "/media/apps/odpiralnicasi.png", :alt => "OdpiralniČasi" }
+    %dd
+      %a{ :href => "http://odpiralnicasi.com", :title => "OdpiralniČasi" }
+        odpiralnicasi.com
+    %dd
+      Spletna aplikacija, ki omogoča hitro iskanje odprtih lokalov, trgovin ali poslovalnic blizu tebe.
+    %dt
+      Modre strani
+    %dd.thumb
+      %a{ :href => "http://modrestrani.si/", :title => "Modre strani" }
+        %img{ :src => "/media/apps/modrestrani.gif", :alt => "Modre strani" }
+    %dd
+      %a{ :href => "http://modrestrani.si", :title => "Modre strani" }
+        modrestrani.si
+    %dd
+      Spletna skupnost namenjena izmenjavi mnenj o podjetjih in njihovi ponudbi. Odkrij novo ponudbo in povej svoje mnenje!
+.copy.sub
+  %h3
+    Mednarodne aplikacije
+  %dl
+    %dt
+      Basecamp
+    %dd.thumb
+      %a{ :href => "http://www.basecamphq.com", :title => "Basecamp" }
+        %img{ :src => "media/apps/basecamp.gif", :alt => "Basecamp" }
+    %dd
+      %a{ :href => "http://www.basecamphq.com", :title => "Basecamp" }
+        basecamphq.com
+    %dd
+      Servis podjetja 37signals, ki omogoča upravljanje in sodelovanje na projektih. Iz te aplikacije je postopoma nastal Rails.
+    %dt
+      Twitter
+    %dd.thumb
+      %a{ :href => "http://www.twitter.com", :title => "Twitter" }
+        %img{ :src => "http://rubyonrails.org/images/applications/twitter.jpg", :alt => "43Things" }
+    %dd
+      %a{ :href => "http://www.twitter.com", :title => "Twitter" }
+        twitter.com
+    %dd
+      Vsem poznana platforma za micro-blogging. Povejte kaj trenutno delate!
+    %dt
+      GitHub
+    %dd.thumb
+      %a{ :href => "http://www.github.com", :title => "GitHub" }
+        %img{ :src => "http://rubyonrails.org/images/applications/github.jpg", :alt => "GitHb" }
+    %dd
+      %a{ :href => "http://www.github.com", :title => "GitHub" }
+        github.com
+    %dd
+      Socialno omrežje za programerje, kjer komentiramo in raziskujemo kodo drug drugega.
+.copy
+  %h2
+    Kaj še potrebujem?
+  %p
+    Rails deluje na kupu različnih spletnih in podatkovnih strežnikov.
+    Za spletni strežnik je priporočen
+    %a{ :href => "http://apache.org/", :title => "Apache HTTP server" }
+      Apache
+    spletni strežnik z naloženim
+    %a{ :href => "http://www.modrails.com/", :title => "Phusion Passenger Apache module" }
+      Passenger
+    modulom za izvajanje Rails aplikacij.
+    Za razvojno okolje je priporočen
+    %a{ :href => "http://code.macournoyer.com/thin/" }
+      Thin,
+    ki je zamenjal starejšega Mongrel-a.
+  %p
+    Podatkovna baza lahko teče na 
+    %a{:href => "http://mysql.com"} MySQL, 
+    %a{:href => "http://www.enterprisedb.com/"} PostgreSQL, 
+    %a{:href => "http://www.sqlite.org/"} SQLite, 
+    %a{:href => "http://www.oracle.com/index.html"} Oracle, 
+    %a{:href => "http://www.microsoft.com/sqlserver/"} SQL Server, 
+    %a{:href => "http://www-01.ibm.com/software/data/db2/"} DB2,
+    %a{:href => "http://couchdb.apache.org/"} CouchDB
+    ali 
+    %a{:href => "http://www.firebirdsql.org/"} Firebird
+    strežnikih. Skoraj
+    %strong.marker
+      katerikoli sistem zadostuje
+    za razvoj in testiranje,
+    a za produkcijsko okolje je priporočen *nix tip operacijskega sistema.

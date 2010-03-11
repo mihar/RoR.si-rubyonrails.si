@@ -1,0 +1,98 @@
+#head
+  %h1
+    Pripravljeni, pozor, namestitev v hipu
+  %p
+    Rails ni odvisen od veliko paketov, saj skoraj vse komponente dejansko tvorijo osnovni paket. 
+    Za pričetek moraš namestiti le Ruby, programski jezik, in RubyGems, upravitelj ruby paketov.
+.copy
+  %h2
+    Ruby
+  %p
+    Za uporabo z Rails je priporočen
+    %strong.marker
+      Ruby 1.8.7
+    \. Ruby 1.8.6, 1.8.5 in 1.8.4 prav tako deluje, verzija 1.8.3 pa povzroča težave.
+  %dl.softwar
+    %dt
+      %a{ :href => "http://rubyforge.org/frs/download.php/69034/rubyinstaller-1.8.7-p249-rc2.exe" }
+        Ruby 1.8.7 za Windows
+    %dd
+      Namestitev rubya s popularnimi razširitvami in urejevalnikom.
+    %dt
+      %a{ :href => "ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p174.tar.gz" }
+        Ruby 1.8.7 Izvorna koda
+    %dd
+      Primerna za kompilacijo na poljubnem sistemu.
+    %dt
+      %a{ :href => "http://hivelogic.com/narrative/articles/ruby-rails-mongrel-mysql-osx" }
+        Mac OS X
+    %dd
+      %strong
+        10.4 Tiger 
+      vključuje Ruby z napakami, kako jih odpraviti si lahko preberete v
+      %a{ :href => "http://hivelogic.com/narrative/articles/ruby-rails-mongrel-mysql-osx" }
+        vodiču.
+    %dd
+      %strong
+        10.5 in 10.6,
+      oba Leoparda vsebujeta Ruby med svojimi
+      %em
+        developer tools
+      in potrebno je samo pognati
+      %code sudo gem update rails
+        
+.copy
+  %h2
+    RubyGems
+  %p
+    %a{ :href => "http://docs.rubygems.org/", :title => "RubyGems dokumentacija" }
+      RubyGems
+    je
+    %strong.marker
+      standardni upravitelj Ruby paketov
+    \. Podoben je sorodnim upraviteljem, kot so apt-get, rpm in emerge.
+  %p
+    Potrebuješ
+    %a{ :href => "http://rubyforge.org/frs/download.php/5208/rubygems-0.8.11.zip", :title => "RubyGems 0.8.11" }
+      ZIP
+    ali
+    %a{ :href => "http://rubyforge.org/frs/download.php/5207/rubygems-0.8.11.tgz", :title => "RubyGems 0.8.11" }
+      TGZ
+    arhiv, katerega razširiš. Nato iz ukazne vrstice z
+    %code
+      ruby setup.rb
+    poženeš namestitev.
+.copy
+  %h2
+    Rails
+  %p
+    Ko je RubyGems naložen, lahko iz ukazne vrstice naložiš celotno Rails distribucijo:
+  %p
+    %code
+      gem install rails --include-dependencies
+  %p
+    Nove verzije Rails lahko namestiš na enak način, ali kot
+    %a{ :href => "http://rubyforge.org/frs/?group_id=307", :title => "RubyForge: Rails" }
+      samostojne pakete
+    \.
+.copy
+  %h2
+    Kako narediti aplikacijo?
+  %p
+    Ustvari ogrodje aplikacije in poženi strežnik s sledečimi ukazi:
+  %p
+    %code
+      rails ime_aplikacije
+    %br
+    %code
+      cd ime_aplikacije
+    %br
+    %code
+      ruby script\server
+  %p
+    Čestitke, na tvojem računalniku teče Ruby on Rails.
+    %br
+    Sledi navodilom na
+    %a{ :href => "http://localhost:3000", :title => "Tvoja sve\305\276a Rails aplikacija" }
+      http://localhost:3000
+    \.

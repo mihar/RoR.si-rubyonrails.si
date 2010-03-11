@@ -1,0 +1,75 @@
+!!! Strict
+%html
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title
+      Ruby on Rails Slovenija
+    %link{ :href => "/favicon.ico", :rel => "shortcut icon" }
+    %link{ :href => "/style/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
+  %body
+    #nav
+      %h1
+        Ruby on Rails Slovenija
+      %ul
+        %li.meta
+          %a{ :href => "/" }
+        %li
+          - unless @current
+            %strong
+              Povzetek
+          - else
+            %a{ :href => "/" }
+              Povzetek
+        %li
+          - if @current == :vizualije
+            %strong
+              Vizualije
+          - else
+            %a{ :href => "/vizualije/" }
+              Vizualije
+        %li
+          - if @current == :potrebscine
+            %strong
+              Potrebščine
+          - else
+            %a{ :href => "/potrebscine/" }
+              Potrebščine
+        %li
+          %a{ :href => "http://guides.rubyonrails.org" }
+            Dokumentacija
+        %li
+          %a{ :href => "http://rails.si" }
+            Skupnost
+
+    = yield
+    
+    #foot
+      %h2
+        O projektu
+      %p.whatis
+        Ruby on Rails Slovenija je projekt za popularizacijo razvoja aplikacij na Ruby on Rails v Sloveniji.
+      %p
+        Prostovoljno ga vodiva
+        %a{ :href => "http://artiqulate.com/", :title => "Srđan Prodanović, Artiqulate" }
+          Srđan Prodanović
+        in
+        %a{ :href => "http://majx.org/", :title => "Miha Rebernik, Majx" }
+          Miha Rebernik
+        \.
+      %p
+        Rails je razvil
+        %a{ :href => "http://www.loudthinking.com/about.html" }
+          David Heinemeier Hansson
+        , nadgrajujejo pa ga člani
+        %a{ :href => "http://groups.google.com/group/rubyonrails-core" }
+          Rails core
+        skupine.
+
+    %script{:type=>"text/javascript"}
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    %script{:type=>"text/javascript"}
+      var pageTracker = _gat._getTracker("UA-3142059-2");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+  

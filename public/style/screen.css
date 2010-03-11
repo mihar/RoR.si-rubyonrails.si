@@ -1,0 +1,364 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+}
+
+body {
+	text-align: center;
+	background: white url(../media/backdrop.gif) repeat-x;
+}
+
+body * {
+	margin: 0 auto;
+	text-align: left;
+}
+
+a {
+	color: #9E0C0F;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#nav {
+	background: #9E0C0F url(../media/navdrop.gif) repeat-x;
+}
+
+#nav h1 {
+	display: none;
+}
+
+#nav ul {
+	width: 760px;
+	margin: 0 auto;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+#nav ul li {
+	float: left;
+	padding: 0 20px 0 0;
+}
+
+#nav ul li a, #nav ul li strong {
+	display: block;
+	font: bold 13px/32px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: white;
+	border-top: 3px solid #B45136;
+}
+
+#nav ul li.meta {
+	width: 100px;
+}
+
+#nav ul li a:hover {
+	border-top-color: white;
+	color: #DF9;
+}
+
+#nav ul li.meta a {
+	font-weight: normal;
+}
+
+#nav ul li.meta a:hover {
+	border-top-color: #B45136;
+}
+
+#nav ul li strong {
+	color: #DF9;
+	border-top: 3px solid #DF9;
+	cursor: default;
+}
+
+#nav h2, #foot h2 {
+	display: none;
+}
+
+#head {
+	width: 640px;
+	padding: 40px 0 0 120px;
+	background: url(../media/rails_logo.gif) 0 50px no-repeat;
+}
+
+#head h1 {
+	position: relative;
+	font: bold 28px/40px "Trebuchet MS", Trebuchet, Geneva, Arial, Helvetica, sans-serif;
+	color: #444;
+	
+}
+
+#head p {
+	position: relative;
+	font: normal 20px/28px "Trebuchet MS", Trebuchet, Geneva, Arial, Helvetica, sans-serif;
+	color: #999;
+}
+
+.hype {
+	margin-top: 40px;
+	padding-bottom: 2px;
+	background: #DF9 url(../media/hypedrop.gif) 0 bottom repeat-x;
+}
+
+.hype ul {
+	width: 760px;
+	margin: 0 auto;
+	list-style-type: none;
+	overflow: hidden;
+	border-left: 1px solid #DF9;
+}
+
+.hype ul li {
+	float: left;
+	width: 190px;
+}
+
+.hype ul li a {
+	display: block;
+	width: 164px;
+	padding: 15px 10px 15px 15px;
+	border-right: 1px solid #DF9;
+	font: normal 14px/18px Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+.hype ul li a:hover {
+	text-decoration: none;
+	background: /*#B45035*/ #9E0C0F url(../media/navdrop.gif) repeat-x;
+	color: white;
+}
+
+.hype ul li a strong {
+	display: block;
+	padding-left: 25px;
+	font: normal 18px/26px Georgia, "Times New Roman", Times, serif;
+	color: #9E0B0E;
+}
+
+.hype ul li a:hover strong {
+	color: #DF9;
+}
+
+li.hy_visual strong {
+	background: url(../media/icons/images.png) 0 center no-repeat;
+}
+
+li.hy_download strong {
+	background: url(../media/icons/download.png) 0 center no-repeat;
+}
+
+li.hy_documentation strong {
+	background: url(../media/icons/documentation.png) 0 center no-repeat;
+}
+
+li.hy_community strong {
+	background: url(../media/icons/community.png) 0 center no-repeat;
+}
+
+
+/* No eye candy for IE lt 7 */
+* html body div.hype ul li strong {
+	background-image: none;
+	padding-left: 0;
+}
+
+.copy {
+	position: relative;
+	width: 760px;
+	padding-top: 40px;
+	overflow: hidden;
+}
+
+.sub { /* Less padding for subcontent */
+	padding-top: 20px;
+}
+
+.copy h2 {
+	float: left;
+	width: 220px; height: 52px; overflow: visible;
+	padding: 8px 19px 0 0;
+	font: normal 22px/28px "Trebuchet MS", Trebuchet, Geneva, Arial, Helvetica, sans-serif;
+	text-align: right;
+	background: url(../media/copydrop.gif) right 0 no-repeat;
+}
+
+.copy p {
+	float: right;
+	width: 500px;
+	padding-top: 8px;
+		
+	font: normal 18px/26px Georgia, "Times New Roman", Times, serif;
+	color: #666;
+}
+
+.copy p code {
+	font: 17px/26px "Courier New", Courier, mono;
+	padding: 0 2px;
+	margin: 0 4px;
+	word-spacing: -2px;
+	background: #F6F6F6;
+}
+
+strong.marker {
+	font-weight: normal;
+	background: #EFC;
+	padding: 0 2px;
+}
+
+.copy h3 {
+	float: left;
+	clear: both;
+	width: 220px;
+	padding-right: 19px; /* This only makes the layout look leet when you Outline block level elements in the Webdeveloper toolbar :-) */
+	padding-top: 9px;
+	font: normal 17px/26px "Trebuchet MS", Trebuchet, Geneva, Arial, Helvetica, sans-serif;
+	text-align: right;
+	color: #666;
+}
+
+.visual h3 {
+	float: right;
+	clear: both;
+	width: 500px;
+	padding: 8px 0 0 0;
+	font: normal 20px/26px "Trebuchet MS", Trebuchet, Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+	color: #444;
+}
+
+.visual p {
+	padding-top: 4px;
+}
+
+.visual .thumb {
+	position: relative;
+	float: left;
+	width: 220px;
+	padding-top: 15px;
+	text-align: right;
+}
+
+.visual .thumb br { /* I know.. but it's there for the pda's */
+	display: none;
+}
+
+.visual .thumb img {
+	border: none;
+}
+
+.visual .thumb em {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	width: 170px;
+	padding: 0 10px;
+	font: bold 11px/30px Verdana, Arial, Helvetica, sans-serif; 
+	text-transform: uppercase;
+	background: #DF9 url(../media/icons/control_play.png) 160px center no-repeat;
+	color: #9E0B0E;
+	visibility: hidden;
+	z-index: 100;
+}
+
+.visual .thumb a:hover {
+	text-decoration: none;
+}
+
+.visual .thumb a:hover em {
+	visibility: visible;
+}
+
+.copy dl {
+	position: relative;
+	float: right;
+	width: 500px;
+		
+	font: normal 18px/26px Georgia, "Times New Roman", Times, serif;
+	color: #666;
+}
+
+.copy dl dt {
+	clear: both;
+	padding-top: 8px;
+	color: #444;
+}
+
+.copy dl dd {
+	float: right;
+	width: 300px;
+	font: normal 16px/22px Arial, Helvetica, sans-serif;
+}
+
+.copy dl.softwar dd {
+	width: 500px;
+}
+
+.copy dl dd a {
+	text-transform: uppercase;
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #9E0C0F;
+}
+
+.copy dl dd a:hover {
+	text-decoration: underline;
+}
+
+.copy dl dd.thumb {
+	float: left;
+	width: 176px;
+	padding-top: 9px;
+}
+
+.copy dl dd.thumb img {
+	border: none;
+}
+
+.copy ul.pres {
+	padding-left: 120px;
+	list-style: none;
+	overflow: hidden;
+}
+
+.copy .pres li {
+	float: left;
+	width: 213px;
+	padding-top: 15px;
+}
+
+.copy .pres li a {
+	font: normal 12px/16px Arial, Helvetica, sans-serif;
+}
+
+.copy .pres li a img {
+	border: none;
+	text-decoration: none;
+}
+
+#foot {
+	position: relative;
+	width: 760px;
+	padding: 70px 0 40px 0;
+	background: url(../media/footerdrop.gif) 0 20px no-repeat;
+}
+
+#foot p {
+	padding-left: 120px;
+	font: normal 13px/20px Arial, Helvetica, sans-serif;
+	color: #888;
+}
+
+#foot p a {	
+	color: #9E0C0F;
+	text-decoration: none;
+}
+
+#foot p a:hover {
+	text-decoration: underline;
+}
