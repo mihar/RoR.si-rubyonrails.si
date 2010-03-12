@@ -21,22 +21,22 @@
             %a{ :href => "/" }
               Povzetek
         %li
-          - if @current == :vizualije
+          - if @current == :screencasti
             %strong
-              Vizualije
+              Screencasti
           - else
-            %a{ :href => "/vizualije/" }
-              Vizualije
+            %a{ :href => "/screencasti/" }
+              Screencasti
         %li
-          - if @current == :potrebscine
+          - if @current == :download
             %strong
-              Potrebščine
+              Download
           - else
-            %a{ :href => "/potrebscine/" }
-              Potrebščine
+            %a{ :href => "/download/" }
+              Download
         %li
-          %a{ :href => "http://guides.rubyonrails.org" }
-            Dokumentacija
+          %a{ :href => "http://rubyonrails.org/docs" }
+            Dokumenti
         %li
           %a{ :href => "http://rails.si" }
             Skupnost

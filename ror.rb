@@ -6,12 +6,12 @@ get '/' do
   haml :index
 end
 
-get '/potrebscine/' do
-  @current = :potrebscine
-  haml :potrebscine
+get '/download/' do
+  @current = :download
+  haml :download
 end
 
-get '/vizualije/' do
-  @current = :vizualije
-  haml :vizualije
+get '/screencasti/' do
+  @current = :screencasti
+  haml :screencasti
 end
