@@ -5,8 +5,13 @@ This is the source code for the Slovenian Ruby/Rails Presentation website, [ruby
 
 It is licensed under the MIT License, so if you would like to fork and customize for your own user group, you are more than welcome to.
 
-# Authors and contributors
+# Authors
 
 [Srđan Prodanović](/Artiqulate) and [Miha Rebernik](/mihar)
 
-Design by Srđan Prodanović
+# Contributors
+
+[Oto Brglez](/otobrglez)
+
+# Design
+[Srđan Prodanović](/Artiqulate)
