@@ -3,15 +3,15 @@
     Pripravljeni, pozor, namestitev v hipu
   %p
     Rails ni odvisen od veliko paketov, saj skoraj vse komponente dejansko tvorijo osnovni paket. 
-    Za pričetek moraš namestiti le Ruby, programski jezik, in RubyGems, upravitelj ruby paketov.
+    Za pričetek moraš namestiti le programski jezik Ruby, in RubyGems, upravitelj ruby paketov.
 .copy
   %h2
     Ruby
   %p
     Za uporabo z Rails je priporočen
     %strong.marker
-      Ruby 1.8.7
-    \. Ruby 1.8.6, 1.8.5 in 1.8.4 prav tako deluje, verzija 1.8.3 pa povzroča težave.
+      Ruby 1.8.7 oziroma Ruby 1.9.2
+    \. Različice starejše od Ruby 1.8.6, vam lahko povzročajo težave.
   %dl.software
     %dt
       %a{ :href => "http://rubyforge.org/frs/download.php/69034/rubyinstaller-1.8.7-p249-rc2.exe" }
@@ -19,10 +19,15 @@
     %dd
       Namestitev rubya s popularnimi razširitvami in urejevalnikom.
     %dt
-      %a{ :href => "ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p174.tar.gz" }
+      %a{:href => "ftp://ftp.ruby-lang.org/pub/ruby/1.9/" }
+        Ruby 1.9.x Izvorna koda
+    %dd
+      Primerna za kompilacijo na poljubnem operacijskem sistemu.
+    %dt
+      %a{ :href => "ftp://ftp.ruby-lang.org/pub/ruby/1.8/" }
         Ruby 1.8.7 Izvorna koda
     %dd
-      Primerna za kompilacijo na poljubnem sistemu.
+      Primerna za kompilacijo na poljubnem operacijskem sistemu.
     %dt
       %a{ :href => "http://hivelogic.com/narrative/articles/ruby-rails-mongrel-mysql-osx" }
         Mac OS X
@@ -82,13 +87,13 @@
     Ustvari ogrodje aplikacije in poženi strežnik s sledečimi ukazi:
   %p
     %code
-      rails ime_aplikacije
+      rails new ime_aplikacije
     %br
     %code
       cd ime_aplikacije
     %br
     %code
-      ruby script\server
+      rails server
   %p
     Čestitke, na tvojem računalniku teče Ruby on Rails.
     %br
