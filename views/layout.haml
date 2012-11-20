@@ -4,8 +4,8 @@
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
     %title
       Ruby on Rails Slovenija
-    %link{ :href => "/favicon.ico", :rel => "shortcut icon" }
-    %link{ :href => "/style/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
+    %link{ :href => "http://rubyonrailssi.s3.amazonaws.com/favicon.ico", :rel => "shortcut icon" }
+    %link{ :href => "http://rubyonrailssi.s3.amazonaws.com/style/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
   %body
     #nav
       %h1
@@ -53,7 +53,7 @@
         %a{ :href => "http://facebook.com/Some1Else", :title => "Srđan Prodanović, Some1Else" }
           Srđan Prodanović
         in
-        %a{ :href => "http://majx.org/", :title => "Miha Rebernik, Majx" }
+        %a{ :href => "http://miha.rebernik.info/", :title => "Miha Rebernik, majx" }
           Miha Rebernik
         \.
       %p
@@ -65,11 +65,14 @@
           Rails core
         skupine.
 
-    %script{:type=>"text/javascript"}
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    %script{:type=>"text/javascript"}
-      var pageTracker = _gat._getTracker("UA-3142059-2");
-      pageTracker._initData();
-      pageTracker._trackPageview();
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3142059-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
   

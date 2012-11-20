@@ -14,9 +14,9 @@
       %a{ :href => "/download/" }
         %strong
           Poigraj se
-        s prenosom verzije 2.3.8, ki je v javnost bila izdana 25. maja 2010.
+        s prenosom verzije 3.2.8, ki je v javnost bila izdana 9. avgusta 2012.
     %li.hy_documentation
-      %a{ :href => "http://guides.rubyonrails.org" }
+      %a{ :href => "http://rubyonrails.org/documentation" }
         %strong
           Izboljšaj se
         z branjem vodičev, knjig, vzorcev, priročnikov in uradne dokumentacije.
@@ -24,7 +24,7 @@
       %a{ :href => "http://rails.si" }
         %strong
           Poveži se
-        s slovenskimi Ruby in Rails razvijalci na Rails.si in izmenjaj izkušnje
+        s slovenskimi Ruby in Rails razvijalci na Rails.si in izmenjaj izkušnje.
 
 .copy
   %h2
@@ -41,10 +41,10 @@
   %h2
     Kdo uporablja Rails?
   %p
-    Od začetnikov, neprofitnih organizacij, do koroporacij.. Vsi uporabljajo Rails. Zaradi osredotočenosti na infrastrukturo, je primerna platforma za razvoj praktično vseh tipov spletnih aplikacij. Te lahko poganjajo
+    Od začetnikov, neprofitnih organizacij, do korporacij. Vsi uporabljajo Rails. Zaradi osredotočenosti na infrastrukturo, je primerna platforma za razvoj praktično vseh tipov spletnih aplikacij. Te lahko poganjajo
     %strong.marker
-      kolaborativne strani, ki temeljijo na skupnostih, spletne trgovine, urejevalnike vsebin, statistik
-    , in pravzaprav karkoli drugega si lahko izmisliš.. Naprimer:
+      kolaborativne strani, ki temeljijo na skupnostih, spletne trgovine, urejevalnike vsebin, statistik, 
+      in pravzaprav karkoli drugega si lahko izmisliš. Na primer:
 .copy.sub
   %h3
     Slovenske aplikacije
@@ -53,7 +53,7 @@
       OdpiralniČasi
     %dd.thumb
       %a{ :href => "http://odpiralnicasi.com", :title => "OdpiralniČasi" }
-        %img{ :src => "/media/apps/odpiralnicasi.png", :alt => "OdpiralniČasi" }
+        %img{ :src => "http://rubyonrailssi.s3.amazonaws.com/media/apps/odpiralnicasi.png", :alt => "OdpiralniČasi" }
     %dd
       %a{ :href => "http://odpiralnicasi.com", :title => "OdpiralniČasi" }
         odpiralnicasi.com
@@ -63,7 +63,7 @@
       Modre strani
     %dd.thumb
       %a{ :href => "http://modrestrani.si/", :title => "Modre strani" }
-        %img{ :src => "/media/apps/modrestrani.gif", :alt => "Modre strani" }
+        %img{ :src => "http://rubyonrailssi.s3.amazonaws.com/media/apps/modrestrani.gif", :alt => "Modre strani" }
     %dd
       %a{ :href => "http://modrestrani.si", :title => "Modre strani" }
         modrestrani.si
@@ -77,7 +77,7 @@
       Basecamp
     %dd.thumb
       %a{ :href => "http://www.basecamphq.com", :title => "Basecamp" }
-        %img{ :src => "media/apps/basecamp.gif", :alt => "Basecamp" }
+        %img{ :src => "http://rubyonrailssi.s3.amazonaws.com/media/apps/basecamp.gif", :alt => "Basecamp" }
     %dd
       %a{ :href => "http://www.basecamphq.com", :title => "Basecamp" }
         basecamphq.com
@@ -108,11 +108,12 @@
     Kaj še potrebujem?
   %p
     Rails deluje na kupu različnih spletnih in podatkovnih strežnikov.
-    Za spletni strežnik je priporočen
-    %a{ :href => "http://apache.org/", :title => "Apache HTTP server" }
-      Apache
+    Za spletni strežnik je priporočeno uporabljati
+    %a{ :href => "http://apache.org/", :title => "Apache HTTP server" } Apache
+    ali
+    %a{ :href => "http://nginx.org/", :title => "nginx HTTP server" } nginx
     spletni strežnik z naloženim
-    %a{ :href => "http://www.modrails.com/", :title => "Phusion Passenger Apache module" }
+    %a{ :href => "http://www.modrails.com/", :title => "Phusion Passenger module" }
       Passenger
     modulom za izvajanje Rails aplikacij.
     Za razvojno okolje je priporočen
@@ -135,3 +136,7 @@
       katerikoli sistem zadostuje
     za razvoj in testiranje,
     a za produkcijsko okolje je priporočen *nix tip operacijskega sistema.
+  %p
+    Za razvijalcu najbolj prijazno okolje za gostovanje Rails aplikacij velja 
+    %a{href: 'http://www.heroku.com', title: 'Heroku Ruby hosting platform'} Heroku.
+    Z že par par ukazi v ukazni vrstici je aplikacija nemudoma dostopna na spletu.

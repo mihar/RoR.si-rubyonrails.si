@@ -10,36 +10,24 @@
   %p
     Za uporabo z Rails je priporočen
     %strong.marker
-      Ruby 1.8.7
-    \. Ruby 1.8.6, 1.8.5 in 1.8.4 prav tako deluje, verzija 1.8.3 pa povzroča težave.
+      Ruby 1.9.3
+    \. Ruby 1.9.2 ali 1.8.7 bosta delovala, vendar bo z njima več težav kot koristi, pa še počasnejša sta pri zagonu Rails aplikacij.
   %dl.software
     %dt
-      %a{ :href => "http://rubyforge.org/frs/download.php/69034/rubyinstaller-1.8.7-p249-rc2.exe" }
-        Ruby 1.8.7 za Windows
+      %a{ :href => "http://rubyforge.org/frs/download.php/75894/railsinstaller-2.1.0.exe" }
+        Windows komplet za Rails
     %dd
-      Namestitev rubya s popularnimi razširitvami in urejevalnikom.
+      Preprosta namestitev Ruby 1.9.3 z dodatki za razvoj Rails aplikacij (RailsInstaller). Priporočen paket za Windows uporabnike, ki vključuje tudi Git, SQLite, idr.
     %dt
-      %a{ :href => "ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p174.tar.gz" }
-        Ruby 1.8.7 Izvorna koda
+      %a{ :href => "http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p327.tar.gz" }
+        Ruby 1.9.3 Izvorna koda
     %dd
       Primerna za kompilacijo na poljubnem sistemu.
     %dt
-      %a{ :href => "http://hivelogic.com/narrative/articles/ruby-rails-mongrel-mysql-osx" }
-        Mac OS X
+      %a{ :href => "https://github.com/downloads/railsinstaller/railsinstaller-nix/RailsInstaller-1.0.3-osx-10.7.app.tgz" }
+        Mac OS X (10.7 in 10.8)
     %dd
-      %strong
-        10.4 Tiger 
-      vključuje Ruby z napakami, kako jih odpraviti si lahko preberete v
-      %a{ :href => "http://hivelogic.com/narrative/articles/ruby-rails-mongrel-mysql-osx" }
-        vodiču.
-    %dd
-      %strong
-        10.5 in 10.6,
-      oba Leoparda vsebujeta Ruby med svojimi
-      %em
-        developer tools
-      in potrebno je samo pognati
-      %code sudo gem update rails
+      Preprosta namestitev Ruby 1.9.3 z dodatki za razvoj Rails aplikacij (RailsInstaller).
         
 .copy
   %h2
@@ -50,13 +38,19 @@
     je
     %strong.marker
       standardni upravitelj Ruby paketov
-    \. Podoben je sorodnim upraviteljem, kot so apt-get, rpm in emerge.
+    \. Podoben je sorodnim upraviteljem, kot so apt-get, rpm in brew.
   %p
-    Potrebuješ
-    %a{ :href => "http://rubyforge.org/frs/download.php/5208/rubygems-0.8.11.zip", :title => "RubyGems 0.8.11" }
+    V kolikor si Ruby naložil kot 
+    %strong.marker samostojni paket, 
+    bo potrebno 
+    %strong.marker ročno namestiti 
+    RubyGems.
+  %p
+    Prenesi
+    %a{ :href => "http://rubyforge.org/frs/download.php/76072/rubygems-1.8.24.zip", :title => "RubyGems 1.8.24" }
       ZIP
     ali
-    %a{ :href => "http://rubyforge.org/frs/download.php/5207/rubygems-0.8.11.tgz", :title => "RubyGems 0.8.11" }
+    %a{ :href => "http://rubyforge.org/frs/download.php/76073/rubygems-1.8.24.tgz", :title => "RubyGems 1.8.24" }
       TGZ
     arhiv, katerega razširiš. Nato iz ukazne vrstice z
     %code
@@ -66,15 +60,19 @@
   %h2
     Rails
   %p
-    Ko je RubyGems naložen, lahko iz ukazne vrstice naložiš celotno Rails distribucijo:
+    Če 
+    %strong.marker niste uporabili RailsInstaller paketa, 
+    bo zdaj potrebno še ročno namestiti Rails ogrodje. Na srečo je to ko enkrat imamo RubyGems zelo preprosto. 
+  %p
+    V ukazno vrstico natipkaš:
   %p
     %code
-      gem install rails --include-dependencies
+      gem install rails
   %p
-    Nove verzije Rails lahko namestiš na enak način, ali kot
-    %a{ :href => "http://rubyforge.org/frs/?group_id=307", :title => "RubyForge: Rails" }
-      samostojne pakete
-    \.
+    Nove verzije Rails lahko namestiš na enak način, ali pa nadgradiš z ukazom:
+  %p
+    %code
+      gem update rails
 .copy
   %h2
     Kako narediti aplikacijo?
@@ -82,13 +80,13 @@
     Ustvari ogrodje aplikacije in poženi strežnik s sledečimi ukazi:
   %p
     %code
-      rails ime_aplikacije
+      rails new ime_aplikacije
     %br
     %code
       cd ime_aplikacije
     %br
     %code
-      ruby script\server
+      rails server
   %p
     Čestitke, na tvojem računalniku teče Ruby on Rails.
     %br

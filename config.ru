@@ -1,3 +1,2 @@
-require 'ror.rb'
-
+require './ror.rb'
 run Sinatra::Application
